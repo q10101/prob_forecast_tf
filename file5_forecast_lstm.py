@@ -52,7 +52,8 @@ def forecast_lstm(model, data_test, idx_to_forecast, num_channels, sigmaT, muT, 
 
     plt.tight_layout()
     plt.suptitle("Open-Loop Forecasting for All Channels (Stateful)", y=1.02, fontsize=16)
-    plt.show(block=False)
+    #plt.show(block=False)
+    plt.savefig("output/5-openloop-forecast.png")
     plt.pause(0.1)
 
     # Closed Loop Forecasting
@@ -97,5 +98,6 @@ def forecast_lstm(model, data_test, idx_to_forecast, num_channels, sigmaT, muT, 
 
     plt.tight_layout()
     plt.suptitle("Closed-Loop Forecasting for All Channels", y=1.02, fontsize=16)
-    plt.show(block=False)
+    #plt.show(block=False)
+    plt.savefig("output/5-closedloop-forecast.png")
     plt.pause(0.1)

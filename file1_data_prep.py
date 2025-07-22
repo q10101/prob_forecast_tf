@@ -141,7 +141,8 @@ def prepare_data():
             ax.legend()
     plt.tight_layout()
     plt.suptitle("Example Waveform Sequences", y=1.02)
-    plt.show(block=False)
+    #plt.show(block=False)
+    plt.savefig("output/1-example-waveform.png")
     plt.pause(0.1)
 
     # Partition data into training and test sets

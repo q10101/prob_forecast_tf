@@ -52,7 +52,8 @@ def train_network(model, optimizer, criterion, train_dataset_, num_epochs=200):
     plt.ylabel("MSE Loss")
     plt.grid(True)
     plt.legend()
-    plt.show(block=False)
+    #plt.show(block=False)
+    plt.savefig("output/3-training-loss.png")
     plt.pause(0.1)
 
     # Plot all iteration losses
@@ -63,7 +64,8 @@ def train_network(model, optimizer, criterion, train_dataset_, num_epochs=200):
     plt.ylabel("MSE Loss")
     plt.grid(True)
     plt.legend()
-    plt.show(block=False)
+    #plt.show(block=False)
+    plt.savefig("output/3-iteration-loss.png")
     plt.pause(0.1)
     
     return train_losses, all_iteration_losses

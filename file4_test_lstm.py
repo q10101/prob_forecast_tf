@@ -32,7 +32,8 @@ def test_lstm(model, test_dataset, num_channels, sigmaT, muT, sigmaX, muX):
     plt.ylabel("Frequency")
     plt.title("Test RMSE Errors Histogram")
     plt.grid(True)
-    plt.show(block=False)
+    #plt.show(block=False)
+    plt.savefig("output/4-rmse-errors.png")
     plt.pause(0.1)
 
     mean_rmse = np.mean(test_rmse_errors)
